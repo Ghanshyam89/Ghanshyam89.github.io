@@ -262,8 +262,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero p {
   color: #45505b;
-  margin: 15px 0 0 0;
-  font-size: 26px;
+  margin: 15px 0 15px 0;
+  font-size: 30px;
   font-family: "Poppins", sans-serif;
 }
 #hero p span {
@@ -294,9 +294,22 @@ h1, h2, h3, h4, h5, h6 {
   }
   #hero p {
     margin-top: 10px;
-    font-size: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
     line-height: 24px;
   }
+}
+
+.wave {
+  -webkit-animation-duration: 2.1s;
+  animation-duration: 2.1s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: wave-animation;
+  animation-name: wave-animation;
+  display: inline-block;
+  -webkit-transform-origin: 70% 70%;
+  transform-origin: 70% 70%;
 }
 
 /*--------------------------------------------------------------
@@ -342,6 +355,8 @@ section {
 }
 .section-title p {
   margin-bottom: 0;
+
+  text-align: justify;
 }
 
 /*--------------------------------------------------------------
@@ -414,7 +429,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+#Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -483,6 +498,7 @@ section {
 }
 .resume .resume-item ul li {
   padding-bottom: 10px;
+  text-align: justify;
 }
 .resume .resume-item:last-child {
   padding-bottom: 0;
